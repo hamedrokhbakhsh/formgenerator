@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="submitted()" class="row">
+
+  <mat-form-field appearance="fill" class="col-12"
+  >
+    <mat-label>Input</mat-label>
+    <input formControlName="name" matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="col-12">
+    <mat-label>action</mat-label>
+    <input formControlName="action" matInput>
+  </mat-form-field>
+  <ol class="col-12">
+    <li>
+      <button mat-raised-button type="button" (click)="openDialog()">Pick one</button>
+    </li>
+
+  </ol>
+
+  <button mat-raised-button>ok</button>
+</form>
+
+
+
+
+
+
+
+
+

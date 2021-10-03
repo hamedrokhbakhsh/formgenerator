@@ -11,23 +11,27 @@ import {MatInputModule} from "@angular/material/input";
 import {MatIconModule} from "@angular/material/icon";
 import {FormModule} from "./form/form.module";
 import {HttpClientModule} from "@angular/common/http";
+import { AnimationComponent } from './animation/animation.component';
+import {DragDropModule} from "@angular/cdk/drag-drop";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnimationComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatIconModule,
-    FormModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        MatIconModule,
+        FormModule,
+        HttpClientModule,
+        DragDropModule
+    ],
 
   providers: [],
   bootstrap: [AppComponent]

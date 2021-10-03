@@ -1,0 +1,76 @@
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <mat-form-field appearance="fill" class="col-12">
+    <mat-label>name</mat-label>
+    <input formControlName="name" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="col-12">
+    <mat-label>label</mat-label>
+    <input formControlName="label" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="col-12">
+    <mat-label>value</mat-label>
+    <input formControlName="value" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="col-12">
+    <mat-label>type</mat-label>
+    <input formControlName="type" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="col-12">
+    <mat-label>multi</mat-label>
+    <input formControlName="multi" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="col-12">
+    <mat-label>class</mat-label>
+    <input formControlName="class" matInput>
+  </mat-form-field>
+  <mat-form-field class="col-12">
+    <mat-label>required</mat-label>
+    <input formControlName="required" matInput>
+  </mat-form-field>
+
+
+  <h1>validators</h1>
+  <div class="mx-1" formGroupName="validators">
+    <mat-form-field class="col-12">
+      <mat-label>min</mat-label>
+      <input formControlName="max" matInput>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <mat-label>max</mat-label>
+      <input formControlName="max" matInput>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <mat-label>required</mat-label>
+      <input formControlName="required" matInput>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <mat-label>requiredTrue</mat-label>
+      <input formControlName="requiredTrue" matInput>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <mat-label>email</mat-label>
+      <input formControlName="email" matInput>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <mat-label>minLength</mat-label>
+      <input formControlName="minLength" matInput>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <mat-label>maxLength</mat-label>
+      <input formControlName="maxLength" matInput>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <mat-label>pattern</mat-label>
+      <input formControlName="pattern" matInput>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <mat-label>nullValidators</mat-label>
+      <input formControlName="nullValidators" matInput>
+    </mat-form-field>
+  </div>
+    <button [disabled]="!form.valid" mat-button>Ok</button>
+</form>
+
+
+
